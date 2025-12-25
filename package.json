@@ -1,0 +1,11 @@
+{
+  "name": "js-design-patterns-lab",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "devDependencies": {}
+}
