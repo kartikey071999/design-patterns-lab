@@ -1,0 +1,32 @@
+[
+  {
+    "id": "wf-001",
+    "name": "Daily Report Generator",
+    "type": "WORKFLOW",
+    "purpose": "Generate daily analytics report",
+    "config": {
+      "kind": "workflow",
+      "trigger": {
+        "type": "CRON",
+        "config": {
+          "schedule": "0 0 * * *"
+        }
+      },
+      "execution": {
+        "mode": "SEQUENTIAL"
+      }
+    }
+  },
+  {
+    "id": "ut-001",
+    "name": "Text Sanitizer",
+    "type": "UTILITY",
+    "purpose": "Normalize and sanitize input text",
+    "config": {
+      "kind": "utility",
+      "execution": {
+        "mode": "PURE_FUNCTION"
+      }
+    }
+  }
+]
